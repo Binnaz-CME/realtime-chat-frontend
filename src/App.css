@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.chatbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: peachpuff;
+  width: 600px;
+  height: 300px;   
+  overflow-y : scroll;
+  color: black;
+  font-size: 1rem;
+}
+
+.chatInput {
+  height: 5em;
+  width: em;
+}
+
+p {
+  margin: 1em 0.3em 1em 1em
+}
+
+button, select {
+  font-size: calc(6px + 2vmin);
+  margin: 0.2em
+}
+
+small {
+  font-size: small;
+  font-weight: lighter;
+}
+
+input {
+  margin: 1em;
+  height: 2em;
+  width: 20em;
+}
+
