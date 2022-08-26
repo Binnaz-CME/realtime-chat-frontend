@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import io from "socket.io-client";
 
-const socket = io(process.env.BACKEND_URL);
+const socket = io("https://realtime-chat-backend-ba.herokuapp.com/");
 
 function App() {
   const [roomname, setRoomname] = useState("default");
@@ -120,7 +120,8 @@ function App() {
             <div className="chatbox">
               {messageHistory.map(({ id, user, created_at, message }) => (
                 <p key={id}>
-                  <small>{`${created_at} GMT`}:</small> <em>{user}:</em> {message}
+                  <small>{`${created_at} GMT`}:</small> <em>{user}:</em>{" "}
+                  {message}
                 </p>
               ))}
             </div>
