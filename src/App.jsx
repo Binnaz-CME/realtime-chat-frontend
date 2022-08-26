@@ -1,9 +1,9 @@
+import React from "react";
 import { useState, useEffect } from "react";
 import "./App.css";
 import io from "socket.io-client";
 
 const socket = io("https://realtime-chat-backend-ba.herokuapp.com/");
-// const socket = io('http://localhost:4000');
 
 function App() {
   const [roomname, setRoomname] = useState("default");
