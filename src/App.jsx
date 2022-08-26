@@ -47,7 +47,7 @@ function App() {
       setRooms(availableRooms);
     });
 
-    socket.on("leave_room", (room) => {
+    socket.on("leave_room", () => {
       setJoined(false);
     });
 
